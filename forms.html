@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Biodata pendaftar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="gaya.css">
+        <style>
+            body{
+                background-color: #24252A;    
+            }
+
+            legend {
+                text-align: center;
+                border-radius: 50px;
+                background-color: #24444d;
+                padding: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border: outset;
+                font-size: 25px;
+                font-family: 'Anton', sans-serif;
+            }
+
+            legend {
+                color: whitesmoke;
+            }
+
+            table {           
+                font-family: 'Courier New', Courier, monospace;
+                border-radius: 15px;
+                background-color: #0088a9;
+                border: inset;
+                margin: auto;
+                padding: 50px;
+                align-content: center;
+                justify-content: center;
+            }
+
+            input {
+                border-style: outset;
+                transition: all 0.3s ease;
+            }
+
+            select {
+                border: outset;
+            }
+
+            textarea {
+                border: outset;
+            }
+
+            fieldset {
+                border: hidden;
+                align-content: center;
+            }
+
+            button {
+                text-align: center;
+                border-radius: 50px;
+                background-color: rgb(112, 126, 145);
+                padding: 30px 30px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border: none;
+                border: hidden;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="registration.php" method="POST" autocomplete="on">
+            <fieldset display="inline-block">
+
+            <legend>Akun</legend>
+
+            <table>
+                <tr>
+                    <td><label for="text">Nama Lengkap</label></td>
+                    <td><input type="text" id="name" name="Username" required></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="text">Password</label></td>
+                    <td><input type="password" id="myInput" required></td>
+                    <td><input type="checkbox" onclick="myFunction()">Check</td>
+                 
+                </tr>
+
+                <tr>
+                    <td><label for="text">Konfirmasi Password</label>
+                    <td><input type="password" id="myConfirm" name="Konfirmasi Pswd" required></td>
+                </tr>
+                
+            </table>
+
+            </fieldset>
+
+        <fieldset display="inline-block">
+
+        <legend>Data</legend>
+
+        <table>
+            
+            <tr>
+                <td><label for="text">Name</label></td>
+                <td><input type="text" name="Nama"></td>  
+            </tr>
+            <tr>
+                <td><label for="text">E-mail</label></td>
+                <td><input type="email" name="email"></td>  
+            </tr>
+
+            <tr>
+                <td> <label for="date">Birthday</label></td>
+                <td><input type="date" id="date" name="date" max="1998-12-31"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Jenis Kelamin">Gender</label></td>
+
+                <td><input type="radio" id="Laki-laki" name="jenis kelamin">
+                <label for="laki-laki">Laki-laki</label></td>
+
+                <td><input type="radio" id="Perempuan" name="jenis kelamin">
+                <label for="Perempuan">Perempuan</label></td>       
+            </tr>
+
+            <tr>
+                <td><label for="text">Hobby</label></td>
+                <td><input type="text" name="hobby" name="hobby"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Dream">Your Dream :</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="dream1" name="dream1"></td>
+                <td><label for="checkbox">Game Developer</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="dream2" name="dream2"></td>
+                <td><label for="checkbox">Web Developer</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="dream3" name="dream3"></td>
+                <td><label for="checkbox">Cyber Security</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="dream4" name="dream4"></td>
+                <td><label for="checkbox">Programmer</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="dream5" name="dream5"></td>
+                <td><label for="checkbox">System Analyst</label></td>
+            </tr>
+
+            <tr>
+                <td><label for="cars">Favourite Language :</label></td>
+                <td>
+                <select name="Language" id="Language">
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                  <option value="js">JAVA SCRIPT</option>
+                  <option value="jquery">JQUERY</option>
+                  <option value="MySQL">MySQL</option>
+                </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Chill">Who are you ?</label></td>
+                <td><textarea style="width: 300px; height: 100px;" required>Just write it..</textarea></td>
+            </tr>
+            
+            <tr>
+               <td><a href="index.html"><button>LOGIN</button></a></td>
+            </tr>
+            
+         </table>
+
+        </fieldset>
+
+        </form>
+        <script src="java.js"></script>
+        
+    </body>
+</html>

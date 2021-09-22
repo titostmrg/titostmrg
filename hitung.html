@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Mari Berhitung </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="hitung.css"
+
+    </head>
+    <body>
+
+            <div>
+                    <h2> SIMPLE CALCULATOR </h2>
+                    <input type="number" placeholder="Angka 1" id="ang1"/>
+                    <br/>
+
+                    <input type="number" placeholder="Angka 2" id="ang2"/>
+                    <br/>
+
+                    <button id="add">+</button>
+                    <button id="sub">-</button>
+                    <button id="mul">x</button>
+                    <button id="div">/</button><br/>
+
+                    <input type="number" id="result" readonly />
+               
+            
+            </div>
+    
+        <script type="text/javascript">
+        var n1 = document.getElementById("ang1");
+        var n2 = document.getElementById("ang2");
+        var res = document.getElementById("result");
+
+        document.getElementById ("add").addEventListener
+        ("click", function(){
+            res.value = 
+            parseInt(n1.value)+parseInt(n2.value);
+        });
+
+        document.getElementById ("sub").addEventListener
+        ("click", function(){
+            res.value = 
+            parseInt(n1.value)-parseInt(n2.value);
+        });
+
+
+        document.getElementById ("mul").addEventListener
+        ("click", function(){
+            res.value = 
+            parseInt(n1.value)*parseInt(n2.value);
+        });
+
+        document.getElementById ("div").addEventListener
+        ("click", function(){
+            res.value = 
+            parseInt(n1.value)/parseInt(n2.value);
+        });
+        
+        </script>
+    </body>
+</html>
