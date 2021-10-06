@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
+h1{
+        font-size: 50px;
+        font-family: 'Gemunu Libre', sans-serif;
+    }
+
+body{
+    background-color: #24252a;
+    color: whitesmoke;
+    font-family: 'Gemunu Libre', sans-serif;
+}  
+
+@media only screen and (max-width: 770px) {
+    .btn-primary , .btn-outline-success{
+        margin-top: 10px;
+        margin-left: 0 !important;
+        /*width:max-content;*/
+}
+
+      
+}
+      .featurette-heading {
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -.05rem;
+      }
+      .vl {
+        border-left: 2px solid grey;
+        height: 50px;
+      }
+
