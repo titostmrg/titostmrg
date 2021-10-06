@@ -40,18 +40,14 @@ header {
     align-content: center;
 }
 
-footer{
-    align-content: center;
-    align-items: center;
-    width: 35cm;
-    height: 2cm;
-    border-radius: 10px;
-    background-color: #0088a9;
-    color: white;
-    padding: auto;
-    margin: 50px;
-    font-size: 25px;
+.content{
     text-align: center;
+    margin: 45px;
+    background-color: #0088a9;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #edf0f1;
+
 }
 
 .logo {
@@ -95,7 +91,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 800px) {
-    .nav__links, .cta {
+    .nav__links, .cta{
         display: none
     }
     .menu {
